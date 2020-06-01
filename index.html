@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>First Project</title>
+  </head>
+  <body id="body">
+    <div>
+      <div id="item-0" class="item">i1</div>
+      <div id="item-1" class="item">i2</div>
+      <div id="item-2" class="item">i3</div>
+      <div id="item-3" class="item">i4</div>
+      <div id="item-4" class="item">i5</div>
+      <div id="item-5" class="item">i6</div>
+    </div>
+    <br />
+    <div class="tableDiv">
+      <table id="table1">
+        <tr class="tableHeader">
+          <th>Title</th>
+          <th>Author</th>
+          <th>Book ID</th>
+        </tr>
+      </table>
+    </div>
+    <div class="pagination">
+      <a id="back" onclick="movePage(this.id)">&lt;</a>
+      <a
+        id="s0"
+        class="btn active"
+        onclick="clickActive(this.id); displayJS(this.innerText)"
+        >1</a
+      >
+      <a
+        id="s1"
+        class="btn"
+        onclick="clickActive(this.id); displayJS(this.innerText)"
+        >2</a
+      >
+      <a
+        id="s2"
+        class="btn"
+        onclick="clickActive(this.id); displayJS(this.innerText)"
+        >3</a
+      >
+      <a
+        id="s3"
+        class="btn"
+        onclick="clickActive(this.id); displayJS(this.innerText)"
+        >4</a
+      >
+      <a
+        id="s4"
+        class="btn"
+        onclick="clickActive(this.id); displayJS(this.innerText)"
+        >5</a
+      >
+      <a id="next" onclick="movePage(this.id)">&gt;</a>
+    </div>
+  </body>
+  <script src="CRUD.js"></script>
+  <script src="pagination.js"></script>
+</html>

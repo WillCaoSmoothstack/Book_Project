@@ -1,0 +1,32 @@
+.pagination {
+  display: inline-block;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 37%;
+  text-align: center;
+  user-select: none;
+}
+.pagination a {
+  border: 0.05rem solid rgb(216, 214, 214);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  user-select: None;
+  float: left;
+}
+.pagination a.active {
+  background-color: rgb(31, 189, 52);
+  color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(12, 219, 47);
+}
+.pagination a:hover:not(.active) {
+  background-color: rgb(216, 214, 214);
+}
+
+th,
+td {
+  border: 0.1em solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
